@@ -171,7 +171,7 @@ tab = mengirim.getSaldo();
     public void setor (int bal, int s){
         if(s%100!=0)
             JOptionPane.showMessageDialog(null,
-        "Mesin ATM BRI tidak menerima koin. Silakan ulangi!","Transaksi gagal",0);
+        "Mesin ATM One Piece tidak menerima koin. Silakan ulangi!","Transaksi gagal",0);
         else if(s<50000)
             JOptionPane.showMessageDialog(null, "Besaran minimal setor tunai Rp. 50000","ERROR",0);
         else if(s>=50000)
@@ -187,10 +187,10 @@ tab = mengirim.getSaldo();
             private int saldo;
         public void ambil(int tab, int t){
             if(t%100!=0)
-                JOptionPane.showMessageDialog(null, "Mesin ATM BRI tidak menerima Anda","Transaksi gagal",0);
+                JOptionPane.showMessageDialog(null, "Jumlah tarikan tidak valid","Transaksi gagal",0);
             else{
                 if (t>tab)
-                    JOptionPane.showMessageDialog(null, "Saldo minimal wajib Rp 50000,00. Segera lakukan penyetoran untuk menghindari blokir","CAUTION",2);
+                    JOptionPane.showMessageDialog(null, "Saldo minimal wajib Rp 50000,00","CAUTION",2);
                 else
                     saldo = tab-t;
                     JOptionPane.showMessageDialog(null,"Saldo Anda sebesar: " +saldo);
